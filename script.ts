@@ -92,7 +92,7 @@ function colorChanger(): void {
     changeColor.title = "Világos módra váltás";
   } else {
     styleSheet.href = "style.css";
-    changeColor.innerHTML = "🌑";
+    changeColor.innerHTML = "🌙";
     activeColor = "light";
     changeColor.title = "Sötét módra váltás";
   }
@@ -102,7 +102,7 @@ function percentage(): void {
   let valasz = ertekelesResz.appendChild(document.createElement("p"));
   const maxpont = Number(maxPont.value);
   const elertpont = Number(elertPont.value);
-  if (maxpont > 0) {
+  if (maxpont > 0 && elertpont <= maxpont) {
     let szazalek: string = Math.floor((elertpont / maxpont) * 100) + "%";
     valasz.id = "valasz";
     valasz.innerHTML = `A diák eredménye: ${jegy(

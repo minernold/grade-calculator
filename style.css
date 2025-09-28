@@ -1,7 +1,17 @@
+:root {
+  --bg: #ffc0cb;
+  --pink-light: #ffb7c5;
+  --pink-soft: #f7cac9;
+  --pink-lavender: #d8b2d1;
+  --pink-baby: #fadadd;
+  --gray-soft: #aaaaaa;
+  --white: #ffffff;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 50px;
-  background-color: pink;
+  padding-top: 1.5rem;
+  background-color: var(--bg);
   text-align: center;
   color: black;
   font-size: 16px;
@@ -9,7 +19,7 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -25,10 +35,11 @@ h2 {
 .input {
   border-radius: 10%;
   width: 100px;
-  background-color: #f6cfff;
+  background-color: var(--pink-light);
   font-weight: bold;
   text-align: center;
   max-width: 200px;
+  color: black;
 }
 
 .jegySzazalek {
@@ -36,7 +47,6 @@ h2 {
 }
 
 #changeColor {
-  color: white;
   padding: 0;
   background: none;
   border: 0;
@@ -45,15 +55,19 @@ h2 {
 
 #ertekeles {
   border: 2px solid white;
-  background-color: #eea1ff;
+  background-color: var(--pink-lavender);
   font-weight: bold;
   font-variant: small-caps;
   font-size: 1.4rem;
   padding: 10px;
   margin: 20px;
-  color: white;
+  color: var(--white);
   border-radius: 30%;
   width: 0.6;
+}
+
+#ertekeles:hover {
+  background-color: var(--gray-soft);
 }
 
 #valasz {
