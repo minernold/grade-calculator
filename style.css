@@ -42,6 +42,12 @@ h2 {
   color: black;
 }
 
+.input::placeholder {
+  color: var(--gray-soft);
+  font-size: 0.65rem;
+  font-weight: normal;
+}
+
 .jegySzazalek {
   margin-top: 1rem;
 }
@@ -63,7 +69,6 @@ h2 {
   margin: 20px;
   color: var(--white);
   border-radius: 30%;
-  width: 0.6;
 }
 
 #ertekeles:hover {
@@ -74,5 +79,5 @@ h2 {
   font-weight: bold;
   color: black;
   font-size: 1.4rem;
-  text-align: left;
+  text-align: center;
 }
