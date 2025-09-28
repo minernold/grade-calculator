@@ -74,23 +74,24 @@ function percentage() {
         valasz.id = "valasz";
         valasz.innerHTML = "Kérem valós számot adjon meg!";
     }
-    function jegy(maxpont, elertpont) {
-        let szazalek = Math.floor((elertpont / maxpont) * 100);
-        if (szazalek >= Number(otosHatar.value)) {
-            return "5 (jeles)";
-        }
-        else if (szazalek >= Number(negyesHatar.value)) {
-            return "4 (jó)";
-        }
-        else if (szazalek >= Number(harmasHatar.value)) {
-            return "3 (közepes)";
-        }
-        else if (szazalek >= Number(kettesHatar.value)) {
-            return "2 (elégséges)";
-        }
-        else
-            return "1 (elégtelen)";
+    valasz?.scrollIntoView({ behavior: "smooth" });
+}
+function jegy(maxpont, elertpont) {
+    let szazalek = Math.floor((elertpont / maxpont) * 100);
+    if (szazalek >= Number(otosHatar.value)) {
+        return "5 (jeles)";
     }
+    else if (szazalek >= Number(negyesHatar.value)) {
+        return "4 (jó)";
+    }
+    else if (szazalek >= Number(harmasHatar.value)) {
+        return "3 (közepes)";
+    }
+    else if (szazalek >= Number(kettesHatar.value)) {
+        return "2 (elégséges)";
+    }
+    else
+        return "1 (elégtelen)";
 }
 export {};
 //# sourceMappingURL=script.js.map
