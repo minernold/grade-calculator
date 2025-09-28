@@ -81,3 +81,31 @@ h2 {
   font-size: 1.4rem;
   text-align: center;
 }
+
+#brek {
+  height: 50px;
+}
+
+#instagram {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--gray-soft);
+  text-decoration: none;
+  animation: instagram 5s infinite;
+}
+
+@keyframes instagram {
+  0% {
+    color: var(--accent);
+  }
+  50% {
+    color: var(--primary);
+  }
+  100% {
+    color: var(--accent);
+  }
+}
+
+#instagram:hover {
+  color: var(--white);
+}

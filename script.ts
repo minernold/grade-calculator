@@ -102,6 +102,9 @@ function percentage(): void {
   let valasz = ertekelesResz.appendChild(document.createElement("p"));
   const maxpont = Number(maxPont.value);
   const elertpont = Number(elertPont.value);
+  const breakElement: HTMLDivElement = document.querySelector(
+    "#brek"
+  ) as HTMLDivElement;
   if (maxpont > 0 && elertpont <= maxpont) {
     let szazalek: string = Math.floor((elertpont / maxpont) * 100) + "%";
     valasz.id = "valasz";
@@ -114,6 +117,7 @@ function percentage(): void {
     valasz.innerHTML = "Kérem valós számot adjon meg!";
   }
   valasz?.scrollIntoView({ behavior: "smooth" });
+  breakElement.remove();
 }
 function jegy(maxpont: number, elertpont: number): string {
   let szazalek: number = Math.floor((elertpont / maxpont) * 100);
