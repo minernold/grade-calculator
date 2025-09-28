@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no"
+    />
+    <title>Welcone!</title>
+    <link rel="shortcut icon" href="imgs/calculator.PNG" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link id="styleSheet" rel="stylesheet" href="style.css" />
+    <script src="script.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="row container-fluid mx-auto">
+      <div class="col-md-3 col-sm-12">
+        <button
+          id="changeColor"
+          value="Change Color"
+          title="Sötét módra váltás"
+        >
+          🌑
+        </button>
+        <br />
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h1>Üdv a Tanár néniknek készült jegy és százalék számító oldalon!</h1>
+      </div>
+      <div class="col-md-3 col-sm-12"></div>
+    </div>
+
+    <br />
+
+    <div class="row main container-fluid mx-auto">
+      <div class="col-sm-12">
+        <h2>Add meg a maximális ponthatárt:</h2>
+        &nbsp;
+        <input class="input" type="number" name="maxPont" id="maxPont" />
+        <br />
+        <br />
+
+        <h2>Add meg az elért pontokat:</h2>
+        &nbsp;
+        <input class="input" type="number" name="elertPont" id="elertPont" />
+        <br />
+        <br />
+        <br />
+        <!-- 
+        a szazalekok bekerese
+        -->
+        <div class="row container-fluid mx-auto">
+          <div class="row col-md-12 mx-auto">
+            <h2 style="display: block">Add meg a százalékokat:</h2>
+            <div class="col-md-3 col-sm-12 jegySzazalek">
+              <h2>5:</h2>
+              &nbsp;
+              <input
+                class="input"
+                type="number"
+                name="otosHatar"
+                id="otosHatar"
+              />
+            </div>
+            <div class="col-md-3 col-sm-12 jegySzazalek">
+              <h2>4:</h2>
+              &nbsp;
+              <input
+                class="input"
+                type="number"
+                name="negyesHatar"
+                id="negyesHatar"
+              />
+            </div>
+            <div class="col-md-3 col-sm-12 jegySzazalek">
+              <h2>3:</h2>
+              &nbsp;
+              <input
+                class="input"
+                type="number"
+                name="harmasHatar"
+                id="harmasHatar"
+              />
+            </div>
+            <div class="col-md-3 col-sm-12 jegySzazalek">
+              <h2>2:</h2>
+              &nbsp;
+              <input
+                class="input"
+                type="number"
+                name="harmasHatar"
+                id="kettesHatar"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- 
+        a szazalekok bekerese
+        -->
+
+        <div id="ertekelesResz" class="mx-auto">
+          <button id="ertekeles" class="mx-auto">Értékelés</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
